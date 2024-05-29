@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Advice Generator App</title>
+  </head>
+  <body class="bg-gray-950">
+    <main class="w-screen h-screen grid place-items-center">
+      <container
+        id="width"
+        class="flex flex-col justify-center items-center w-[calc(100%_-_2rem)] bg-slate-900 mx-auto rounded-xl"
+      >
+        <content class="text-green-700 font-manrope mt-8 desktop:my-4">
+          <p>ADVICE # <span id="advice-number">117</span></p>
+        </content>
+
+        <quot
+          class="text-slate-100 font-manrope font-bold text-quote text-center my-4 mx-2"
+        >
+          <q id="advice"
+            >It is easy to sit up and take notice, what's difficult is getting
+            up and taking actions
+          </q>
+        </quot>
+
+        <picture class="text-slate-100 mb-8">
+          <img
+            src="pattern-divider-mobile.svg"
+            alt="mobile-pattern"
+            class="desktop:hidden"
+          />
+          <img
+            src="pattern-divider-desktop.svg"
+            alt="desktop-pattern"
+            class="hidden desktop:block"
+          />
+        </picture>
+
+        <button
+          id="btn"
+          class="bg-green-500 w-[50px] h-[50px] rounded-full flex justify-center items-center relative -mb-[25px]"
+        >
+          <img src="icon-dice.svg" alt="icon-dice" class="absolute" />
+        </button>
+      </container>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
